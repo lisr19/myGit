@@ -100,7 +100,7 @@
 		},
 		created() {
 			this.enterpriseId=localStorage.getItem('enterpriseId')
-			this.getEntDate({year:this.value2,enterpriseId:this.enterpriseId})
+			this.getEntDate({year:this.value2,enterpriseId:this.enterpriseId,size:20})
 		},
 		methods: {
 			nameSelect(id){
@@ -109,7 +109,7 @@
 				this.nhData =  [0,0,0,0,0,0,0,0,0,0,0,0]
 				this.pfData =  [0,0,0,0,0,0,0,0,0,0,0,0]
 				this.wxyData =  [0,0,0,0,0,0,0,0,0,0,0,0]
-				this.getEntDate({year:this.value2,enterpriseId:id?id:this.enterpriseId})
+				this.getEntDate({year:this.value2,enterpriseId:id?id:this.enterpriseId,size:20})
 			},
 			remoteMethod (query) {
 				console.log(query);
@@ -133,7 +133,7 @@
 				this.nhData =  [0,0,0,0,0,0,0,0,0,0,0,0]
 				this.pfData =  [0,0,0,0,0,0,0,0,0,0,0,0]
 				this.wxyData =  [0,0,0,0,0,0,0,0,0,0,0,0]
-				this.getEntDate({year:this.value2,enterpriseId:this.enterpriseId})
+				this.getEntDate({year:this.value2,enterpriseId:this.enterpriseId,size:20})
 			},
 			changeType(){
 				this.flag = false
@@ -141,7 +141,7 @@
 				this.nhData =  [0,0,0,0,0,0,0,0,0,0,0,0]
 				this.pfData =  [0,0,0,0,0,0,0,0,0,0,0,0]
 				this.wxyData =  [0,0,0,0,0,0,0,0,0,0,0,0]
-				this.getEntDate({year:this.value2,enterpriseId:this.enterpriseId})
+				this.getEntDate({year:this.value2,enterpriseId:this.enterpriseId,size:20})
 			},
 			tagType(index){
 				this.currIndex =index
@@ -150,7 +150,7 @@
 				this.nhData =  [0,0,0,0,0,0,0,0,0,0,0,0]
 				this.pfData =  [0,0,0,0,0,0,0,0,0,0,0,0]
 				this.wxyData =  [0,0,0,0,0,0,0,0,0,0,0,0]
-				this.getEntDate({year:this.value2,enterpriseId:this.enterpriseId})
+				this.getEntDate({year:this.value2,enterpriseId:this.enterpriseId,size:20})
 			},
 			//获取数据信息
 			async getEntDate(params){

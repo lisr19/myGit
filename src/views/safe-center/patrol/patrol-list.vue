@@ -104,10 +104,12 @@
 				}
 				.text{
 					display: flex;
-					align-items: center;
 					flex-direction: column;
 					justify-content: space-evenly;
 					height: 90%;
+					flex: 1;
+					text-align: left;
+					padding:0 15px;
 				}
 				.red{
 					color:rgba(221,80,68,1);
